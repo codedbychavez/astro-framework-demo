@@ -1,14 +1,8 @@
 ---
-const pageTitle = "Home page"
+import BaseLayout from "../layouts/BaseLayout.astro";
+const pageTitle = "Home page";
 ---
 
-<body>
-  <a href="/">Home</a>
-  <a href="/about/">About</a>
-  <a href="/blog/">Blog</a>
-
-	<title>{pageTitle}</title>
-	<h1>{pageTitle}</h1>
-
-	<p>Welcome to the home page</p>
-</body>
+<BaseLayout pageTitle={pageTitle}>
+	<h2>My awesome blog subtitle</h2>
+</BaseLayout>
